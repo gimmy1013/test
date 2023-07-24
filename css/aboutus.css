@@ -1,0 +1,101 @@
+
+.about{
+    max-width: 980px;
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    box-sizing: border-box;
+}
+.banner{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.banner img{
+    opacity: 0.6;
+    width: 100%;
+}
+.banner div{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: bold;
+    top: 45%;
+    left:40%;
+}
+.about .about-box{
+    width: 980px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.about .about-box .item{
+    width: 33.333333333333%;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+.about .about-box .item h2{
+    font-size: 1.5rem;
+    margin: 50px 10px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+.about .about-de{
+    display: flex;
+    margin: auto ;
+}
+.about .about-de p{
+    line-height: 2;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.about .about-de div {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.about .about-de div img{
+    width: 100%;
+}
+.about .about-de2{
+    display: flex;
+    margin: auto ;
+}
+.about .about-de2 p{
+    line-height: 2;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.about .about-de2 div {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+.about .about-de2 div img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

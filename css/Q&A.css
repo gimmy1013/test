@@ -1,0 +1,44 @@
+.banner{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.banner img{
+    opacity: 0.6;
+    width: 100%;
+}
+.banner div{
+    text-shadow: 10px 10px 10px gray;
+    position: absolute;
+    font-size: 5rem;
+    font-weight: bold;
+    top: 45%;
+    left:40%;
+}
+.main{
+    max-width: 980px;
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    box-sizing: border-box;
+}
+.main .qabox{
+    line-height: 2;
+    width: 100%;
+    padding: 10px;
+}
+.main .qabox .card{
+    padding: 10px 0px;
+}
+.main .qabox .card p{
+    padding: 5px;
+    border-bottom: 2px dotted black;
+}
+.main .qabox .card .a{
+    color: RED;
+}
+
+
+

@@ -1,0 +1,55 @@
+.footer{
+    /* position: relative; */
+    background-color: gray; 
+    width: 100%;
+    margin: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.footer .logobox{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.footer .logobox a{
+    color: black;
+    text-decoration: none;
+}
+.footer .messagebox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+/* .footer .messagebox .message{
+    width: 60%;
+} */
+.footer .messagebox .message p{
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.footer .messagebox .icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .messagebox .icon img{
+    margin: 0.3rem;
+    width: 60px;
+}
+
+/* .footer .messagebox .icon div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.5rem 0 ;
+}.footer .messagebox .icon div a img{
+    width: 100%;
+} */

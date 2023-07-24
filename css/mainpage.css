@@ -1,0 +1,223 @@
+
+.slideshow{
+    display: flex;
+    width: 100%;
+}
+.slideshow img{
+    width: 100%;
+}
+article{
+    max-width: 980px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.h2{
+    align-items: end;
+    padding: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    /* border: 1px solid black; */
+    display: flex;
+    width: 100th;
+    padding-top: 5%;
+}
+.h2 p{
+    font-size: 4rem;
+    color: red;
+}
+.newstorage{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+.newstorage .card {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    width: 100%;
+}
+.newstorage .card .pict{
+    flex-wrap: wrap;
+    padding: 0 10px;
+    width:100%;
+}
+.newstorage .card .pict img{
+    width: 100%;
+}
+.newstorage .card .pict div{
+    width: 40%;
+    background-color: aqua;
+}
+.newstorage .card .pict div{
+    background-color:gray;
+    color: aliceblue;
+}
+article .storagebtn{
+    display: flex;
+    margin: auto;
+    width:90%;
+    padding-bottom: 10%;
+    padding-top: 30px;
+}
+article .storagebtn input{
+    width:150px;
+    height:30px;
+    border:0;
+    background-color:gray;
+    color:black;
+    font-weight: bold;
+    border-radius:40px;
+    cursor:pointer;}
+  
+    article .storagebtn input:hover{
+    color:white;
+    /* background-color:black; */
+    border:2px gray solid;
+  }
+.topsale{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    position: relative;
+}
+.topsale .text{
+    padding: 0;
+    font-size: 3rem;
+    color: red;
+    font-weight: bolder;    
+    opacity: 0.6;
+    writing-mode: vertical-lr;
+    position: relative;
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+     .topsale .text:after {
+    position:absolute;
+    content:"";
+    background-color: red;
+    width: 20px;
+    height:60%;
+    opacity: 0.2;}
+
+.topsale .card{
+    width:60% ;
+    display: flex;
+}
+.topsale .card div{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.topsale .card div img{
+    margin: auto;
+    width: 50%;
+}
+.topsale .card div a img{
+    width: 100%;
+}
+.topsale .card div:after {
+    position:absolute;
+    content:"";
+    background-image: linear-gradient(to top,black,white);
+    width: 20px;
+    margin-left: 95%;
+    /* margin-top:50%; */
+    height:100%;
+    opacity: 0.5;}
+.topsale .block{
+    content: "";
+    width: 20%;
+}
+.event .h3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 10%;
+}
+.event .h3::after{
+    margin-top:-5%;
+    color: RED;
+    font-size: 10REM;
+    content: "EVENT";
+    position:absolute;
+    opacity: 0.1;}
+.event .card{
+    padding-top:20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.event .card a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    position: relative;
+    width: 50%;
+}
+.event .card a .box{
+    width: 80%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 50PX;
+}
+.event .card a .box .title{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: -100px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.event .card a .box:hover .title{
+    transform: scale(1.1);
+    bottom: 0;
+    opacity: 1;
+    font-size: 2rem;
+}
+
+.event .card a .box img{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.goal{
+    margin-bottom: 100px;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}    
+.goal img{
+    border:0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 50%;
+    
+    
+}
+.goal img:selection {
+    background-color: rgb(166, 203, 37);
+    color: #fff;
+}
