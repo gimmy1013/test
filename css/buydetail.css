@@ -1,0 +1,141 @@
+.slideshow{
+    display: flex;
+    width: 100%;
+}
+.slideshow video{
+    width: 100%;
+}
+.titlebox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom:5%;
+}
+.titlebox .titleboxf {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.titlebox .titleboxf .text{
+    width: 40%;
+    line-height: 2;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.titlebox .titleboxf .text .logo{
+    font-size: 4rem;
+    font-weight: bolder;
+    border-bottom: 10px solid gray;
+}
+.titlebox .titleboxf .text .content{
+    font-size: 2rem;
+}
+.titlebox .titleboxf img{
+    margin-top: 10%;
+    width: 50%;
+}
+.titleboxe{
+    display: flex;
+    width: 100%;
+}
+.titleboxe .imgbox{
+    width: 30%;
+    margin-left: 10%;
+}
+.titleboxe .imgbox img{
+    width: 100%;
+}
+.titleboxe .text{
+    font-style:italic;
+    font-size: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 70%;
+}
+.bigimgf{
+    width: 100%;
+    clip-path: polygon(47% 0, 100% 36%, 100% 82%, 100% 100%, 91% 100%, 0 43%, 0 0);
+}
+.bigimgf img{
+    width: 100%;
+}
+.colorbox{
+    display: flex;
+    margin: auto;
+    padding-bottom:10%;
+    display: flex;
+    width: 100%;
+}
+.colorbox .text{
+    width: 40%;
+    text-align: center;
+}
+.colorbox .text .title{
+    line-height: 2;
+    border-bottom: 10px solid gray;
+  
+    font-size: 2rem;
+    font-weight: bold;
+}
+.colorbox .text .choose{
+    font-size: 1.2rem;
+    line-height: 5;
+}
+.colorbox .text .color {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.colorbox .text .color input{
+    border: none;
+    border-radius: 50%;
+}
+.colorbox .text .color .blue{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(170, 170, 255);
+}
+.colorbox .text .color .blue:hover{
+    cursor:pointer;
+    border: 4px solid white;
+}
+.colorbox .text .color .black{
+    height: 50px;
+    width: 50px;
+    background-color:black;
+}
+.colorbox .text .color .black:hover{
+    cursor:pointer;
+    border: 4px solid white;
+}
+.colorbox .img{
+    width: 50%;
+}
+.colorbox .bikephoto img{
+    width: 100%;
+}
+.dis{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.dis img{
+    width: 50%;
+}
+.dis div{
+    background-color: rgb(77, 77, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+    width: 50%;
+}
+.dis div img{
+    width: 100%;
+}

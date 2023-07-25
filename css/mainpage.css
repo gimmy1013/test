@@ -3,8 +3,9 @@
     display: flex;
     width: 100%;
 }
-.slideshow img{
+.slideshow video{
     width: 100%;
+
 }
 article{
     max-width: 980px;
@@ -72,7 +73,7 @@ article .storagebtn input{
     border-radius:40px;
     cursor:pointer;}
   
-    article .storagebtn input:hover{
+article .storagebtn input:hover{
     color:white;
     /* background-color:black; */
     border:2px gray solid;

@@ -1,0 +1,135 @@
+.banner{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.banner img{
+    opacity: 0.6;
+    width: 100%;
+}
+.banner div{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: bold;
+    top: 45%;
+    left:40%;
+    text-shadow: 10px 10px 10px gray;
+}
+.search{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.search .search-box{
+    position: relative;
+    width: 33.3333333333%;
+
+}
+.search .search-box .boxtext{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    font-size: 2rem;
+}
+.search .search-box .boxsec{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.search .search-box .boxsec select{
+    color:black;
+    margin: 15px;
+    width: 300px;
+    height: 3em;
+    padding: 8px;
+    position: relative;
+    border-radius: 5px;
+}
+.option{
+    max-width: 980px;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+}
+.option a {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 45%;
+}
+.option a .card{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    opacity: 0.6;
+    height:300px;
+}
+.option a .card:hover{
+    opacity: 1;
+    box-shadow:5px 5px gray;
+}
+.option a .card .content{
+    line-height: 1.5;
+    width:40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+.option a .card .content div{
+    width: 100%;
+}
+.option a .card .content .title{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+}
+.option a .card .content .price{
+    color:black ;
+    font-weight: 1000;
+}
+.option a .card .content .des{
+    opacity: 0.8;
+    font-size: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+.option a .card .content .special{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.option a .card .content .special div{
+    width: 22%;
+    line-height: 1;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    margin: 0 2px;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.option a .card .card-img {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 70%;
+}
+.option a .card .card-img img{
+    width: 100%;}

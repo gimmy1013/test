@@ -1,0 +1,146 @@
+
+
+
+.banner{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.banner img{
+    opacity: 0.6;
+    width: 100%;
+}
+.banner div{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: bold;
+    top: 45%;
+    left:42%;
+}
+.main-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width:960px;
+    width: 100%;
+}
+/* .main-box .tab_css{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.main-box .tab_css input{
+    display:none
+}
+.main-box .tab_css label{
+    margin: 0 5px 5px 0; 
+    padding: 10px 16px;
+    cursor: pointer; 
+    border-radius: 5px;
+    background: #999; 
+    color: #fff; 
+    opacity: 0.5;
+}
+.main-box .tab_content{
+    order:1;
+    display: none;
+     width:100%;
+    border-bottom: 3px solid #ddd;
+    line-height: 1.6;
+    font-size: .9em;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+        }
+.main-box .tab_css input:checked + label, .tab_css label:hover{
+    opacity: 1;
+     font-weight:bold;
+    }
+.main-box .tab_css input:checked + label + .tab_content{
+    display: initial;
+} */
+.main-box .main-box-banner{
+    width: 100%;
+
+}
+.main-box .main-box-banner{
+    font-size: 2rem;
+    margin: 20px 10px;
+    justify-content: center;
+    text-align: center;
+}
+.main-box .news{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.main-box .news a{
+    text-decoration: none;
+    color: black;
+    width: 80%;
+    margin: 20px
+}
+.main-box .news a .cardbox{
+    /* box-shadow: 3px 3px gray; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main-box .news a .cardbox:hover{
+    box-shadow: 3px 3px gray;
+}
+.main-box .news a .cardbox  .pict{
+    width: 30%;
+}
+.main-box .news a .cardbox  .pict img{
+    width: 100%;
+}
+.main-box .news a .cardbox  .text{
+    width: 60%;
+    line-height: 2;
+}
+.main-box .news a .cardbox .text h5{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.main-box .news a .cardbox .text h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+    padding: 10px;
+}
+.main-box .news a .cardbox .text p{
+    padding: 10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main-box .timebox{
+    width: 20%;
+    padding-top: 20px;
+}.main-box .timebox a {
+    text-decoration: none;
+}
+.main-box .timebox a div {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2;
+    border-bottom: 2px solid black;
+}
+.main-box .timebox a div:hover{
+    box-shadow: 3px 3px gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

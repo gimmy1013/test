@@ -62,6 +62,29 @@
     font-weight:bolder;
     font-size: 1.3rem;
 }
+.maincontent .detail .text .buylink{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    padding-bottom: 10%;
+    padding-top: 30px;
+}
+.maincontent .detail .text .buylink input{
+    width:250px;
+    font-size: 1.5rem;
+    height:40px;
+    border:0;
+    background-color:gray;
+    color:black;
+    font-weight: bold;
+    border-radius:40px;
+    cursor:pointer;}
+  
+.maincontent .detail .text .buylink input:hover{
+    color:white;
+    /* background-color:black; */
+    border:2px gray solid;
+  }
 .maincontent .special{
     width: 100%;
 }
@@ -95,6 +118,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 10PX 10PX;
+    line-height: 2;
+}
+.maincontent .special .list .card div p{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .maincontent .special .list .card div img{
     width: 100%;

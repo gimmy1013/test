@@ -55,6 +55,7 @@
     font-weight: bold;
 }
 .about .about-de div {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     margin: 20px 20px;
     display: flex;
     justify-content: center;
@@ -74,6 +75,7 @@
     font-weight: bold;
 }
 .about .about-de2 div {
+    clip-path: polygon(0 0, 69% 0, 100% 100%, 31% 100%);
     margin: 20px 20px;
     display: flex;
     justify-content: center;
