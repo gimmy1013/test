@@ -97,7 +97,7 @@
 .colorbox .text .color .blue{
     height: 50px;
     width: 50px;
-    background-color: rgb(170, 170, 255);
+    background-color: rgb(12, 12, 225);
 }
 .colorbox .text .color .blue:hover{
     cursor:pointer;
@@ -127,8 +127,8 @@
 .dis img{
     width: 50%;
 }
-.dis div{
-    background-color: rgb(77, 77, 243);
+.dis .text{
+    background-image: linear-gradient(to  right, #0a0a0a,gray, #fcfcf7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,6 +136,46 @@
     font-weight: bold;
     width: 50%;
 }
+.dis .text2{
+    background-image: linear-gradient(to  left, #0a0a0a, #fcfcf7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+    width: 50%;
+}
+.dis div:hover{
+    color: white;
+}
 .dis div img{
     width: 100%;
+}
+.saleprice{
+    display: flex;
+    background-color: black;
+    background-image: linear-gradient(to  left top, #0a0a0a,black, #fcfcf7);
+    margin: 0;
+    width: 100%;
+}
+.saleprice div{
+    width: 65%;
+    margin-left: 5%;
+}
+.saleprice div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.saleprice div .text{
+    color: black;
+    font-size: 3rem;
+}
+.saleprice div .price{
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+}
+.saleprice img{
+    width: 30%;
 }
