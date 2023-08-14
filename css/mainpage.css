@@ -1,4 +1,8 @@
 
+article{
+    overflow: hidden;
+}
+
 .slideshow{
     display:flex;
     position:relative;
@@ -136,7 +140,7 @@ article .storagebtn input:hover{
     display: flex;
 }
 .topsale .card a{
-    width: 33%;
+    width: 30%;
     position: relative;
 }
 .topsale .card a:hover{
