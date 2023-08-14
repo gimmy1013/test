@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".bikephoto img").first().show(); // Show the first image initially
+    $(".bikephoto img").first().show(); 
 
     $("#blue").click(function() {
         $(".bikephoto img").fadeOut(200, function() {
