@@ -78,10 +78,11 @@ button{
 }
 .ributton{ 
     left: 360px;
+    /* left: 100%; */
     bottom: 5vh;
 }
 .lebutton{ 
-    left:20px;
+    left:100%;
     bottom: 5vh;
 }
 article .storagebtn{
@@ -348,11 +349,11 @@ article .storagebtn input:hover{
         z-index: 3;
     }
     .ributton{ 
-        left: 360px;
+        left: 87%;
         bottom: 5vh;
     }
     .lebutton{ 
-        left:20px;
+        left:5%;
         bottom: 5vh;
     }
     article .storagebtn{
