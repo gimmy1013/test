@@ -7,32 +7,48 @@
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="../css/buydetail.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="../JQuery/jquery-3.7.0.min.js"></script>
+        <script src="../JS/buydetail.js"></script>
         <title>傑斯萊德圓夢出租</title>
     </head>
     <body>
-        <header >
-            <nav class="headlinkl">
-               <a href="../html/aboutus.html">關於我們</a>
-               <a href="../html/rent.html">重機出租</a>
-               <a href="../html/buy.html">重機銷售</a>    
-            </nav>
+        <input type="checkbox" name="" id="menu-switch">
+        <header class="main-header">
             <div class="logo">
                 <a href="../html/mainpage.html">
                     <img src="../img/Group 9.svg" alt="">
                 </a>    
             </div>  
-            <nav class="headlinkr">
+            <nav class="headlink">
+               <a href="../html/aboutus.html">關於我們</a>
+               <a href="../html/rent.html">重機出租</a>
+               <a class="minlink" href="../html/buy.html">重機銷售</a>    
                 <a href="../html/event.html">最新活動</a> 
                 <a href="../html/Q&A.html">問答QA</a>
                 <a href="../html/service base.html">服務據點</a>      
              </nav>
+             <div class="hb">
+                <label for="menu-switch">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <label for="menu-switch" class="backdrop"></label>
         </header>
-        <div class="slideshow">
+        <!-- <div class="slideshow">
             <video autoplay muted loop id="myVideo">
                 <source src="../MP4/y2meta.com-2021 Yamaha R7 - Where R_World Meets Yours-(480p)_hitpaw.com (online-video-cutter.com) (1) - Compressed with FlexClip.mp4" type="video/mp4">
               </video>
-        </div>
+        </div> -->
         <article>
+            <div class="slideshow">
+                <video autoplay muted loop id="myVideo">
+                    <source src="../MP4/y2meta.com - 2021 Yamaha R7 - Where R_World Meets Yours.mp4" type="video/mp4">
+                  </video>
+            </div>
             <div class="titlebox">
                 <div class="titleboxf">
                     <div class="text">
@@ -54,30 +70,30 @@
                     <div class="title">車色展示</div>
                     <div class="choose">選擇車色</div>
                     <div class="color">
-                        <input class="blue" type="button">
-                        <input class="black" type="button">
+                        <input class="blue" type="button" id="blue">
+                        <input class="black" type="button" id="black">
                     </div>
                 </div>
-                <div clsaa="bikephoto">
-                    <img src="../img/YZR-R7 800X600.jpeg" alt="">
+                <div class="bikephoto" data-aos="fade-right" data-aos-duration="500"> 
+                    <img src="../img/yzf-r7 800x600 blue.png" alt="">
                 </div>
             </div>
             <div class="dis">
                 <img src="../img/YZF-R7 900X600 2.svg" alt="">
-                <div class="text">源自YZR-M1的設計</div>
-                <div class="text2">低風阻流線的車身</div>
+                <div class="text1" data-aos="fade-right" data-aos-duration="500">源自YZR-M1的設計</div>
+                <div class="text2" data-aos="fade-right" data-aos-duration="500">低風阻流線的車身</div>
                 <img src="../img/YZF-R7 900X600 3.jpg" alt="">
             </div>
             <div class="dis">
                 <img src="../img/YZF-R7 900X600 4.jpg" alt="">
-                <div class="text">全新設計LCD儀表</div>
-                <div class="text2">充滿跑格的LED燈具</div>
+                <div class="text1" data-aos="fade-right" data-aos-duration="500">全新設計LCD儀表</div>
+                <div class="text2" data-aos="fade-right" data-aos-duration="500">充滿跑格的LED燈具</div>
                 <img src="../img/YZF-R7 900X600 5.jpg" alt="">
             </div>
             <div class="dis">
                 <img src="../img/YZF-R7 900X600 6.jpg" alt="">
-                <div class="text">輕量化高剛性車架</div>
-                <div class="text2">270度點火CP2引擎</div>
+                <div class="text1" data-aos="fade-right" data-aos-duration="500">輕量化高剛性車架</div>
+                <div class="text2" data-aos="fade-right" data-aos-duration="500">270度點火CP2引擎</div>
                 <img src="../img/YZF-R7 900X600 7.jpg" alt="">
             </div>
             <div class="saleprice">
@@ -120,5 +136,8 @@
                 </div>
             </div>
         </footer>
+        <script>
+            AOS.init();
+        </script>
     </body>
     </html>

@@ -3,35 +3,36 @@ header {
     padding: 0px 5px;
     width: 100%;
     display: flex;
-    opacity: 0.8;
-    background-color: gray; 
-    z-index: 1;   
+    background-color: rgba(128,128,128,0.8); 
+    z-index: 2;   
 }
 header .logo{
+    height: 16PX;
     display: flex;
     width: 20%;
     justify-content: space-evenly;
-    position: relative;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:20%;
+    left: 50%;
 }
-
-header .headlinkl{
-    font-size: 0;
+header .logo a {
+    width: 25%;
+}
+header .logo a img{
+    width: 100%;
+}
+header .headlink{
     font-weight: bold;
-    width: 40%;
+    width: 100%;
     align-items: center;
-    justify-content:end;
+    justify-content:center;
     display: flex;
 }
-header .headlinkr{
-    font-size: 0;
-    font-weight: bold;
-    width: 40%;
-    align-items: center;
-    justify-content: start;
-    position: static;
-    display: flex;    
+.minlink{
+    margin-right: 150px;
 }
-header .headlinkl a{
+header .headlink a{
     font-size: 16px;
     display: inline-block;
     line-height: 56px;
@@ -43,23 +44,149 @@ header .headlinkl a{
     justify-content: space-around;
     position: relative;
 }
-header .headlinkl a:hover{
+header .headlink a:hover{
     color:white;
     background-color: black;
 }
-header .headlinkr a{
-    font-size: 16px;
-    display: inline-block;
-    line-height: 56px;
-    color: black;
-    text-decoration: none;
-    width: auto;
-    padding: 0 10px;
-    /* margin: 0 1.2rem; */
-    justify-content: space-around;
-    position: relative;
+header #menu-switch{
+    display: none;
 }
-header .headlinkr a:hover{
-    color:white;
-    background-color: black;
+#menu-switch{
+    display: none;
+}
+
+@media screen and (max-width: 415px) {
+    header {
+        position: fixed;
+        padding: 0px 5px;
+        width: 100%;
+        display: flex;
+        opacity: 0.8;
+        background-color: gray; 
+        z-index: 1;   
+    }
+    header .logo{
+        height: 16PX;
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top:20%;
+        left: 50%;
+    }
+    header .logo a {
+        width: 25%;
+    }
+    header .logo a img{
+        width: 100%;
+    }
+    header .headlink{
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        height: calc(50vh - 60px);
+        background-color:rgb(5, 5, 5);
+        top: 100%;
+        left: 0%;
+        translate: -100% 0%;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 1s, translate 0s 3s;
+    }
+    .minlink{
+        margin: 0;
+    }
+    header .headlink a{
+
+        font-size: 20px;
+        font-weight: bolder;
+        display: inline-block;
+        line-height: 56px;
+        color: white;
+        text-decoration: none;
+        width: auto;
+        padding: 0 10px;
+        justify-content: space-around;
+        position: relative;
+    }
+    header .headlink a + a{
+        border-top: 1px solid #fff;
+    }
+    #menu-switch:checked + .main-header .headlink {
+        translate: 0% 0%;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    .backdrop{
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 0%;
+        height: 0;
+        opacity: 0;
+        background-color: #000;
+        transition: opacity 1s, 
+                    width 0s 1s, 
+                    height 0s 1s;
+    }
+    #menu-switch:checked + .main-header .backdrop{
+        right: 0;
+        top: 100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    .hb{
+        display: flex;
+        justify-content: end;
+        margin-left: 90%;
+    }
+    .hb label{
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: relative;
+    }
+    .hb span{
+        width: 80%;
+        height: 4px;
+        background-color: #f00;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+    .hb span:nth-child(1){
+        translate: 0px -10px;
+        rotate: 0deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0s;
+    }
+    .hb span:nth-child(2){
+        opacity: 1;
+        transition: opacity 0.3s 0.6s;
+    }
+    .hb span:nth-child(3){
+        translate: 0px 10px;
+        rotate: 0deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0s;
+    }
+    #menu-switch:checked + .main-header .hb span:nth-child(1){
+        translate: 0px 0px;
+        rotate: 45deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0.6s;
+    }
+    #menu-switch:checked + .main-header .hb span:nth-child(2){
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    #menu-switch:checked + .main-header .hb span:nth-child(3){
+        translate: 0px 0px;
+        rotate: 315deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0.6s;
+    }
 }

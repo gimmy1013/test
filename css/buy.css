@@ -17,8 +17,10 @@
 }
 .search{
     position: relative;
+    max-width: 980px;
     width: 100%;
     display: flex;
+    margin: auto;
 }
 .search .search-box{
     position: relative;
@@ -48,30 +50,26 @@
 .option{
     max-width: 980px;
     width: 100%;
-    padding: 10px;
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
     margin: auto;
 }
 .option a {
-    margin: auto;
     display: flex;
-    flex-wrap: wrap;
     text-decoration: none;
-    padding: 10px;
     cursor: pointer;
     width: 45%;
+    margin: 10px;
 }
 .option a .card{
     display: flex;
     width: 100%;
-    margin: auto;
-    opacity: 0.6;
     height:300px;
 }
 .option a .card:hover{
-    opacity: 1;
-    box-shadow:5px 5px gray;
+    border: 1px solid rgb(194, 190, 190);
+    box-shadow:1px 1PX  rgb(194, 190, 190);
 }
 .option a .card .content{
     line-height: 1.5;
@@ -133,3 +131,151 @@
 }
 .option a .card .card-img img{
     width: 100%;}
+   
+   
+    @media screen and (max-width: 415px) {
+        .banner{
+            display: flex;
+            width: 100%;
+            position: relative;
+            height: 400px;
+        }
+        .banner img{
+            opacity: 0.6;
+            width: 100%;
+            object-fit: cover;
+        }
+        .banner div{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            font-size: 5rem;
+            font-weight: bold;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left:50%;
+        }
+        .search{
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .search .search-box{
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+        
+        }
+        .search .search-box .boxtext{
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        .search .search-box .boxsec{
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .search .search-box .boxsec select{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color:black;
+            width: 300px;
+            height: 3em;
+            padding: 8px;
+            position: relative;
+            border-radius: 5px;
+        }
+        .option{
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        .option a {
+            display: flex;
+            text-decoration: none;
+            cursor: pointer;
+            width: 100%;
+            margin: 0;
+        }
+        .option a .card{
+            box-sizing: border-box;
+            border: 1px solid rgb(202, 198, 198);
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 60vh;
+        }
+        .option a .card .content{
+            line-height: 1.5;   
+            width:100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .option a .card .content .title{
+            width: 45%;
+            justify-content:center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: black;
+        }
+        .option a .card .content .price{
+            color:black ;
+            width: 45%;
+            font-weight: 1000;
+            font-size: 2rem;
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .option a .card .content .des{
+            opacity: 0.8;
+            width: 45%;
+            font-size: 0.5rem;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .option a .card .content .special{
+            width: 45%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .option a .card .content .special div{
+            width: 45%;
+            line-height: 1;
+            height: 40px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 1px 5px;
+            color: white;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .option a .card .card-img {
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        .option a .card .card-img img{
+            width: 100%;}
+    }

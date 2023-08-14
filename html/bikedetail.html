@@ -3,59 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bikedetail</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/bikedetail.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../JQuery/jquery-3.7.0.min.js"></script>
+    <script src="../JS/bikedetail.js"></script>
 </head>
 <body>
-    <header >
-        <nav class="headlinkl">
-           <a href="../html/aboutus.html">關於我們</a>
-           <a href="../html/rent.html">重機出租</a>
-           <a href="../html/buy.html">重機銷售</a>    
-        </nav>
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
         <div class="logo">
             <a href="../html/mainpage.html">
                 <img src="../img/Group 9.svg" alt="">
             </a>    
-        </div>
-        <nav class="headlinkr">
+        </div>  
+        <nav class="headlink">
+           <a href="../html/aboutus.html">關於我們</a>
+           <a href="../html/rent.html">重機出租</a>
+           <a class="minlink" href="../html/buy.html">重機銷售</a>    
             <a href="../html/event.html">最新活動</a> 
             <a href="../html/Q&A.html">問答QA</a>
             <a href="../html/service base.html">服務據點</a>      
          </nav>
+         <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <label for="menu-switch" class="backdrop"></label>
     </header>
-
 
     <article>
         <div class="maincontent">
             <div class="detail">
                 <div class="pict">
-                    <div class="bigpict">
+                    <div class="bigpict" id="bigImage">
                         <img src="../img/GSX-8S 360x300.svg" alt="">
                     </div>
                     <div class="color">
-                        <div>
-                            <img src="..//img/gsx8s(白色)100x100.svg" alt="">
+                        <div id="8swhite">
+                            <img src="..//img/gsx8s(白色)100x100.svg" alt="" >
                         </div>
-                        <div>
-                            <img src="../img/gsx8s(藍色)100x100.svg" alt="">
+                        <div id="8sblue">
+                            <img src="../img/gsx8s(藍色)100x100.svg" alt="" >
                         </div>
-                        <div>
-                            <img src="..//img/gsx8s(黑色)100x100.svg" alt="">
+                        <div id="8sblack">
+                            <img src="..//img/gsx8s(黑色)100x100.svg" alt="" >
                         </div>
                     </div>
                 </div>
                 <div class="text">
                     <div class="title">
                         <h3>GSX-8S</h3>
-                        <!-- <p>最新世代鈴木街車</p> -->
                     </div>
                     <div class="price">
                         <table>
-                            <tr>
+                            <tr class="headtext">
                                 <th>方案</th>
                                 <th>公里</th>
                                 <th>價格</th>
@@ -87,7 +96,7 @@
                     性能特點
                 </div>
                 <div class="list">
-                    <div class="card">
+                    <div class="card" data-aos="flip-down" data-aos-duration="800">
                         <div>
                             <img src="../img/8S性能特點.svg" alt="">
                         </div>
@@ -95,7 +104,7 @@
                             <p>全新TFT儀表</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-down" data-aos-duration="1100">
                         <div>
                             <img src="../img/8S性能特點2.svg" alt="">
                         </div>
@@ -103,15 +112,15 @@
                             <p>最棒進退快排</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-down" data-aos-duration="1400">
                         <div>
-                            <img src="../img/8S性能特點3.svg" alt="">
+                            <img src="../img/8S性能特點5.svg" alt="">
                         </div>
                         <div>
-                            <p>雙平行軸</p>
+                            <p>倒置式前剎</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-down" data-aos-duration="1700">
                         <div>
                             <img src="..//img/8S性能特點4.svg" alt="">
                         </div>
@@ -119,12 +128,12 @@
                             <p>專利油冷</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-down" data-aos-duration="2000">
                         <div>
-                            <img src="../img/8S性能特點5.svg" alt="">
+                            <img src="../img/8S性能特點3.svg" alt="">
                         </div>
                         <div>
-                            <p>倒置式前剎</p>
+                            <p>雙平行軸</p>
                         </div>
                     </div>
                 </div>
@@ -173,11 +182,11 @@
                 <div class="title">
                     <h4>影片介紹</h4>
                 </div>
-                <div class="video">
+                <div class="video" id="pcvid">
                     <iframe width="960" height="450" src="https://www.youtube.com/embed/kxlj-VVsq5k?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <div class="video">
-                    <iframe width="960" height="450" src="https://www.youtube.com/embed/kxlj-VVsq5k?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video" id="phvid">
+                    <iframe width="414" height="320" src="https://www.youtube.com/embed/kxlj-VVsq5k?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -206,5 +215,8 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

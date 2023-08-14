@@ -1,4 +1,3 @@
-
 .about{
     max-width: 980px;
     width: 100%;
@@ -46,16 +45,27 @@
     color: red;
 }
 .about .about-de{
+    /* background-image: url(../img/aboutus1.png); */
+    background-repeat: no-repeat;
+    width: 100%;
     display: flex;
     margin: auto ;
+    position: relative;
+}
+.about .about-de .overpicture{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
 }
 .about .about-de p{
     line-height: 2;
     letter-spacing: 2px;
     font-weight: bold;
+    position: absolute;
+    z-index: 100;
 }
 .about .about-de div {
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     margin: 20px 20px;
     display: flex;
     justify-content: center;
@@ -63,6 +73,7 @@
     width: 50%;
 }
 .about .about-de div img{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     width: 100%;
 }
 .about .about-de2{
@@ -75,7 +86,6 @@
     font-weight: bold;
 }
 .about .about-de2 div {
-    clip-path: polygon(0 0, 69% 0, 100% 100%, 31% 100%);
     margin: 20px 20px;
     display: flex;
     justify-content: center;
@@ -84,19 +94,123 @@
 
 }
 .about .about-de2 div img{
+    clip-path: polygon(0 0, 69% 0, 100% 100%, 31% 100%);
     width: 100%;
 }
 
 
 
+@media screen and (max-width: 415px) {
+    .about{
+        width: 100%;
+        padding: 100px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .banner{
+        display: flex;
+        width: 100%;
+        position: relative;
+        height: 400px;
+    }
+    .banner img{
+        opacity: 0.6;
+        width: 100%;
+        object-fit: cover;
+    }
+    .banner div{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        font-size: 5rem;
+        font-weight: bold;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left:50%;
+    }
+    .about .about-box{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about .about-box .item{
+        width: 100%;
+        margin: 0 10px;
+        text-align: center;
+        line-height: 2;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .about .about-box .item h2{
+        font-size: 1.5rem;
+        margin: 10px;
+        text-align: center;
+        font-weight: bold;
+        color: red;
+    }
+    .about .about-box .item p{
+        width: 60%;
+        margin-left: 20px;
+        text-align: justify;
+    }
+    .about .about-de{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto ;
+        width: 100%;
+    }
+    .about .about-de div{
+        width: 100%;
+        padding: 40px 0px;
+    }
+    .about .about-de div p{
+        width: 100%;
+        text-align: center;
+        line-height: 3;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+ 
+    .about .about-de div img{
+        clip-path:none;
+        width: 100%;
+    }
+    .about .about-de2{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto ;
+        width: 100%;
+    }
+   
+    .about .about-de2 div {
+        width: 100%;
+        padding: 40px 0px;
+    }
+    .about .about-de2 div p{
+        width: 100%;
+        text-align: center;
+        line-height: 3;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+ 
+    .about .about-de2 div img{
+        clip-path:none;
+        width: 100%;
+    }
 
 
 
 
 
-
-
-
+}
 
 
 

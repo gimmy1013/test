@@ -7,25 +7,34 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/eventrows.css">
-    <title>傑斯萊德圓夢出租</title>
+    <script src="../JQuery/jquery-3.7.0.min.js"></script>
+    <script src="../JS/eventrows.js"></script>
+    <title>Eventrows</title>
 </head>
 <body>
-    <header >
-        <nav class="headlinkl">
-           <a href="../html/aboutus.html">關於我們</a>
-           <a href="../html/rent.html">重機出租</a>
-           <a href="../html/buy.html">重機銷售</a>    
-        </nav>
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
         <div class="logo">
             <a href="../html/mainpage.html">
                 <img src="../img/Group 9.svg" alt="">
             </a>    
         </div>  
-        <nav class="headlinkr">
+        <nav class="headlink">
+           <a href="../html/aboutus.html">關於我們</a>
+           <a href="../html/rent.html">重機出租</a>
+           <a class="minlink" href="../html/buy.html">重機銷售</a>    
             <a href="../html/event.html">最新活動</a> 
             <a href="../html/Q&A.html">問答QA</a>
             <a href="../html/service base.html">服務據點</a>      
          </nav>
+         <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <label for="menu-switch" class="backdrop"></label>
     </header>
       <div class="banner">
             <img src="../img/出租banner.svg" alt="">
@@ -65,12 +74,15 @@
                     WFU BLOG | Blogger 調校資料庫<br/>
                 </div>
             </div> -->
-            <div class="main-box-banner">
-                <p>最新訊息</p>
+            <div class="timebox">
+                <a href="" data-year="2023"><div>2023</div></a>
+                <a href="" data-year="2022"><div>2022</div></a>
+                <a href="" data-year="2021"><div>2021</div></a>
+                <a href="" data-year="2020"><div>2020</div></a>
             </div>
             <div class="news">
-                <a href="../html/event context.html">
-                    <div class="cardbox">
+                <a href="../html/event context.html" class="cardlink">
+                    <div class="cardbox" data-year="2023">
                         <div class="pict">
                             <img src="../img/小圖賽道日.svg" alt="">
                         </div>
@@ -81,8 +93,8 @@
                    </div>
                 </div>
                 </a>
-                <a href="../html/event context.html">
-                    <div class="cardbox">
+                <a href="../html/event context.html" class="cardlink">
+                    <div class="cardbox" data-year="2023">
                         <div class="pict">
                             <img src="../img/小圖賽道日1.svg" alt="">
                         </div>
@@ -93,36 +105,30 @@
                    </div>
                 </div>
                 </a>
-                <a href="../html/event context.html">
-                    <div class="cardbox">
+                <a href="../html/event context.html" class="cardlink">
+                    <div class="cardbox" data-year="2022">
                         <div class="pict">
                             <img src="../img/小圖賽道日2.svg" alt="">
                         </div>
                    <div class="text">
-                        <h5>2023/06/20</h5>
+                        <h5>2022/12/20</h5>
                         <h4>新手賽道日</h4>
                         <p>如果您是一位賽車愛好者或摩托車愛好者，有興趣參與賽車比賽或體驗賽道日，可以查詢龍潭極限賽車場的官方網站或聯繫他們了解更多詳情和活動安排。</p>
                    </div>
                 </div>
                 </a>
-                <a href="../html/event context.html">
-                    <div class="cardbox">
+                <a href="../html/event context.html" class="cardlink">
+                    <div class="cardbox" data-year="2022">
                         <div class="pict">
                             <img src="../img/小圖賽道日3.svg" alt="">
                         </div>
                    <div class="text">
-                        <h5>2023/05/25</h5>
+                        <h5>2022/11/25</h5>
                         <h4>新手賽道日</h4>
                         <p>如果您是一位賽車愛好者或摩托車愛好者，有興趣參與賽車比賽或體驗賽道日，可以查詢龍潭極限賽車場的官方網站或聯繫他們了解更多詳情和活動安排。</p>
                    </div>
                 </div>
                 </a>
-            </div>
-            <div class="timebox">
-                <a href=""><div>2023</div></a>
-                <a href=""><div>2022</div></a>
-                <a href=""><div>2021</div></a>
-                <a href=""><div>2023</div></a>
             </div>
         </div>
 
@@ -131,17 +137,6 @@
 
 
     </article>
-
-
-
-
-
-
-
-
-
-
-
 
     <footer class="footer">
         <div class="logobox">
@@ -158,9 +153,9 @@
                 <p>聯絡手機:09-xxxxxxxx</p>
             </div>
             <div class="icon">
-                <a href="#"><img src="https://ken30116.github.io/Personal-topic/img/All/fb.png" alt=""></a>
-                <a href="#"><img src="	https://ken30116.github.io/Personal-topic/img/All/ig.png" alt=""></a>
-                <a href="#"><img src="https://ken30116.github.io/Personal-topic/img/All/line.png" alt=""></a>
+                <div class="fb"><a href="#"><img src="https://ken30116.github.io/Personal-topic/img/All/fb.png" alt=""></a></div>
+                <div class="ig"><a href="#"><img src="	https://ken30116.github.io/Personal-topic/img/All/ig.png" alt=""></a></div>
+                <div class="line"><a href="#"><img src="https://ken30116.github.io/Personal-topic/img/All/line.png" alt=""></a></div>
             </div>
         </div>
     </footer>

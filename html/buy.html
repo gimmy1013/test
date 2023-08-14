@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buy</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/buy.css">
+    <script src="../JQuery/jquery-3.7.0.min.js"></script>
+    <script src="../JS/buy.js"></script>
 </head>
 <body>
-    <header >
-        <nav class="headlinkl">
-           <a href="../html/aboutus.html">關於我們</a>
-           <a href="../html/rent.html">重機出租</a>
-           <a href="../html/buy.html">重機銷售</a>    
-        </nav>
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
         <div class="logo">
             <a href="../html/mainpage.html">
                 <img src="../img/Group 9.svg" alt="">
             </a>    
-        </div>
-        <nav class="headlinkr">
+        </div>  
+        <nav class="headlink">
+           <a href="../html/aboutus.html">關於我們</a>
+           <a href="../html/rent.html">重機出租</a>
+           <a class="minlink" href="../html/buy.html">重機銷售</a>    
             <a href="../html/event.html">最新活動</a> 
             <a href="../html/Q&A.html">問答QA</a>
             <a href="../html/service base.html">服務據點</a>      
          </nav>
+         <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <label for="menu-switch" class="backdrop"></label>
     </header>
     <article>
         <div class="banner">
@@ -36,7 +45,7 @@
             <div class="search-box">
                 <div class="boxtext">級別</div>
                 <div class="boxsec">
-                    <select name="" id="">
+                    <select name="" id="levelSelect">
                         <option value="150-300">150-300</option>
                         <option value="300-600">300-600</option>
                         <option value="600up">600up</option>
@@ -46,7 +55,7 @@
             <div class="search-box">
                 <div class="boxtext">廠牌</div>
                 <div class="boxsec">
-                    <select name="" id="">
+                    <select name="" id="brandSelect">
                         <option value="SUZUKI">SUZUKI</option>
                         <option value="YAMAHA">YAMAHA</option>
                         <option value="KAWASAKI">KAWASAKI</option>
@@ -60,19 +69,19 @@
             <div class="search-box">
                 <div class="boxtext">風格</div>
                 <div class="boxsec">
-                    <select name="" id="">
-                        <option value="150-300">街車</option>
-                        <option value="300-600">跑車</option>
-                        <option value="600up">美式</option>
-                        <option value="600up">越野</option>
-                        <option value="600up">巡航</option>
+                    <select name="" id="styleSelect">
+                        <option value="街車">街車</option>
+                        <option value="跑車">跑車</option>
+                        <option value="美式">美式</option>
+                        <option value="越野">越野</option>
+                        <option value="巡航">巡航</option>
                     </select>
                 </div>
             </div>  
         </div>
         <div class="option">
             <a href="./buydetail.html">
-            <div class="card">
+            <div class="card" data-level="600up" data-brand="SUZUKI" data-style="街車">
                 <div class="card-img">
                     <img src="../img/超小側面圖GSX-8S.svg" />
                 </div>
@@ -89,7 +98,7 @@
             </div>
             </a>
             <a href="./buydetail.html">
-                <div class="card">
+                <div class="card" data-level="600up" data-brand="YAMAHA" data-style="跑車">
                     <div class="card-img">
                         <img src="../img/超小側面圖YZF-R7.svg" />
                     </div>
@@ -105,7 +114,7 @@
                 </div>
             </a>
             <a href="./buydetail.html">
-                <div class="card">
+                <div class="card" data-level="600up" data-brand="SUZUKI" data-style="跑車">
                     <div class="card-img">
                         <img src="../img/超小側面圖GSX-R1000R.svg" />
                     </div>
@@ -123,7 +132,7 @@
                 </div>
             </a>
             <a href="./buydetail.html">
-                <div class="card">
+                <div class="card" data-level="600up" data-brand="SUZUKI" data-style="街車">
                     <div class="card-img">
                         <img src="../img/超小側面圖GSX-S1000S.svg" />
                     </div>
@@ -141,7 +150,25 @@
                 </div>
             </a>
             <a href="./buydetail.html">
-                <div class="card">
+                <div class="card" data-level="600up" data-brand="YAMAHA" data-style="街車">
+                    <div class="card-img">
+                        <img src="../img/超小側面圖MT-09.svg" />
+                    </div>
+                    <div class="content">
+                        <div class="title">MT-09</div>
+                        <div class="price">50.8萬<br>879cc<br></div>
+                        <div class="des">三缸扭力大師。</div>
+                        <div class="special">
+                            <div>TCS</div>
+                            <div>電子<br>油門</div>
+                            <div>ABS</div>
+                            <div>動力<br>模式</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./buydetail.html">
+                <div class="card" data-level="600up" data-brand="YAMAHA" data-style="街車">
                     <div class="card-img">
                         <img src="../img/超小側面圖MT-09.svg" />
                     </div>

@@ -7,118 +7,131 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/mainpage.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../JQuery/jquery-3.7.0.min.js"></script>
+    <script src="../JS/mainpage.js"></script>
     <title>傑斯萊德圓夢出租</title>
 </head>
 <body>
-    <header >
-        <nav class="headlinkl">
-           <a href="../html/aboutus.html">關於我們</a>
-           <a href="../html/rent.html">重機出租</a>
-           <a href="../html/buy.html">重機銷售</a>    
-        </nav>
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
         <div class="logo">
             <a href="../html/mainpage.html">
                 <img src="../img/Group 9.svg" alt="">
             </a>    
         </div>  
-        <nav class="headlinkr">
+        <nav class="headlink">
+           <a href="../html/aboutus.html">關於我們</a>
+           <a href="../html/rent.html">重機出租</a>
+           <a class="minlink" href="../html/buy.html">重機銷售</a>    
             <a href="../html/event.html">最新活動</a> 
             <a href="../html/Q&A.html">問答QA</a>
             <a href="../html/service base.html">服務據點</a>      
          </nav>
+         <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <label for="menu-switch" class="backdrop"></label>
     </header>
-    <!-- <div class="slideshow">
-        <img src="../img/2022-Yamaha-YZF700R7-EU-Icon_Blue_-Keyvisual-001-03.webp" alt="">
-    </div> -->
     <div class="slideshow">
         <video autoplay muted loop id="myVideo">
-            <source src="../MP4/GSX-8S_Official_Promotional_Video_Suzuki (online-video-cutter.com) - Compressed with FlexClip.mp4" type="video/mp4">
+            <source src="../MP4/GSX-8S SLIDER.mp4" type="video/mp4">
           </video>
     </div>
     <article>
         <div class="h2">新車入庫<p>NEWS!</p></div>
-        <div class="newstorage">    
+        <div class="newstorage" id="itemView">    
             <div class="card">
-                <div class="pict">
-                    <img src="../img/小圖R7.svg" alt="">
+                <a href="" class="itemcar">
+                <div class="pict" data-aos="fade-right" data-aos-duration="500" >
+                    <img src="../img/小圖R7.svg" alt="" >
                     <div>YZF-R7</div>
                 </div>
-                <div class="pict">
+                </a>
+                <a href="" class="itemcar">
+                <div class="pict" data-aos="fade-right" data-aos-duration="800">
                     <img src="../img/小圖GSX-R1000GT.svg" alt="">
                     <div>GSX-S1000G</div>
                 </div>
-                <div class="pict">
+                </a>
+                <a href="" class="itemcar">
+                <div class="pict" data-aos="fade-right" data-aos-duration="1100">
                     <img src="../img/小圖GSX-8S.svg" alt="">
                     <div>GSX-8S</div>
                 </div>
-                <div class="pict">
+                </a>
+                <a href="" class="itemcar">
+                <div class="pict" data-aos="fade-right" data-aos-duration="1400">
                     <img src="../img/小圖CBR-600RR.svg" alt="">
                     <div>CBR-600RR</div>
                 </div>
+                </a>
             </div>
         </div>
+        <button class="lebutton" id="btnLeft">&#10094;</button>
+        <button class="ributton" id="btnRight">&#10095;</button>
         <div class="storagebtn">
-            <a href="../html/rent.html"><input type="button" value="車款總攬>>" ></a>
+            <a href="../html/rent.html"><input type="button" value="車款總攬" ></a>
         </div>
         <div class="topsale">
                 <div class="text">熱銷車型</div>
                 <div class="card">
-                    <div>
-                        <img src="../img/R7 LOGO.svg" alt="">
-                        <a href="../html/bikedetail.html"><img src="../img/R7正面圖.svg" alt=""></a>
-                    </div>
-                    <div>
-                        <img src="../img/MT-09LOGO.svg" alt="">
-                        <a href="../html/bikedetail.html"><img src="../img/MT07正面.svg" alt=""></a>
-                    </div>
-                    <div>
-                        <img src="../img/XSR-700LOGO.svg" alt="">
-                        <a href="../html/bikedetail.html"><img src="../img/XSR-700正面圖.svg" alt=""></a>
-                    </div>
+                    <a href="../html/bikedetail.html" data-aos="flip-left" data-aos-duration="1500">
+                        <div>
+                            <img class="llogo" src="../img/R7 LOGO.svg" alt="">
+                            <img class="moto" src="../img/R7正面圖.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="../html/bikedetail.html" data-aos="flip-left" data-aos-duration="1500">
+                        <div>
+                            <img class="llogo" src="../img/MT-09LOGO.svg" alt="">
+                            <img class="moto" src="../img/MT07正面.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="../html/bikedetail.html" data-aos="flip-left" data-aos-duration="1500">
+                        <div>
+                            <img class="llogo" src="../img/XSR-700LOGO.svg" alt="">
+                            <img class="moto" src="../img/XSR-700正面圖.svg" alt="">
+                        </div>
+                    </a>
                 </div>
         </div>
         <div class="event">
             <div class="h3">活動快訊</div>
             <div class="card">
-                <a href="../html/event context.html">
-                    <div class="box">
-                        <img src="../img/折價圖.jpg">
-                        <div class="title">
-                            <h2>租車優惠</h2>
+                <a href="../html/event context.html" data-aos="flip-down" data-aos-duration="1500">
+                    <div class="hover hover1">
+                        <div>
+                            租車優惠
                         </div>
                     </div>
                 </a>
-                <a href="../html/event context.html">
-                    <div class="box">
-                        <img src="../img/競賽小圖.svg">
-                        <div class="title">
-                            <h2>賽道日</h2>
+                <a href="../html/event context.html" data-aos="flip-down" data-aos-duration="1500">
+                    <div class="hover hover2">
+                        <div>
+                            賽道日
                         </div>
                     </div>
                 </a>
-                <a href="../html/event context.html">
-                    <div class="box">
-                        <img src="../img/越野圖.png">
-                        <div class="title">
-                            <h2>越野體驗</h2>
+                <a href="../html/event context.html" data-aos="flip-down" data-aos-duration="1500">
+                    <div class="hover hover3"> 
+                        <div>
+                            越野體驗
                         </div>
                     </div>
                 </a>
-                <a href="../html/event context.html">
-                    <div class="box">
-                        <img src="../img/首頁安駕.png">
-                        <div class="title">
-                            <h2>安駕訓練</h2>
+                <a href="../html/event context.html" data-aos="flip-down" data-aos-duration="1500">
+                    <div class="hover hover4">
+                        <div>
+                            安駕訓練
                         </div>
                     </div>
                 </a>
-            </div>
-        </div>
-        <div class="goal">
-           <div class="goal-box">
-                <div></div>
-                <div></div>
-           </div>
         </div>
     </article>
     <footer class="footer">
@@ -142,5 +155,8 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

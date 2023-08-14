@@ -11,8 +11,6 @@
     flex-wrap: wrap;
 }
 .mainbox .card a{
-    display: flex;
-    flex-wrap: wrap;
     position: relative;
     width: 100%;
 }
@@ -43,12 +41,47 @@
     font-size: 2rem;
 }
 
-.mainbox .card a .box img{
+.mainbox .card a .test video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
     width: 100%;
-    position: relative;
-    /* top: 50%;
+    height: 450px;
+}
+.mainbox .card a .test div h2{
+    width: 100%;
+    font-size: 7rem;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    transform: translate(-50%,-50%);
     left: 50%;
-    transform: translate(-50%, -50%); */
+    top: 50%;
+    text-align: center;
 }
 
+@media screen and (max-width: 415px) {
+    .mainbox .card a .test video{
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        width: 100%;
+        height: 450px;
+    }
+    .mainbox .card a .test div{
+        width: 100%;
+    }
+
+    .mainbox .card a .test div h2{
+        width: 100%;
+        font-size: 4rem;
+        color: white;
+        font-weight: bolder;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        text-align: center;
+    }
+}
 

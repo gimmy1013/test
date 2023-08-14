@@ -182,9 +182,212 @@
 .maincontent .animation video iframe{ 
     width: 100%;
 }
+#pcvid{
+    display: block;
+}
+#phvid{
+    display: none;
+}
+
+@media screen and (max-width: 415px) {
+    
+.maincontent{
+    width:100%;
+}
+.maincontent .detail {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top:100px;
+}
+.maincontent .detail .pict {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.maincontent .detail .pict .bigpict{
+    width: 100%;
+}
+.maincontent .detail .pict .bigpict img{
+    width: 100%;
+}
+.maincontent .detail .pict .color{
+    width: 100%;
+    display: flex;
+}
+.maincontent .detail .pict .color div{
+    margin: auto;
+}
+.maincontent .detail .pict .color div img{
+    width: 100%;
+}
+.maincontent .detail .text {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.maincontent .detail .text .title{
+    text-align: center;
+    display: block;
+}
+.maincontent .detail .text .title h3{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.maincontent .detail .text .price{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maincontent .detail .text .price table{
+    text-align: center;
+    width:400px;
+    height:200px;
+}
+.maincontent .detail .text .price table .headtext{
+    font-weight:bolder;
+    font-size: 2rem;
+}
+.maincontent .detail .text .price table tr td{ 
+    font-weight:bolder;
+    font-size: 1.3rem;
+}
+.maincontent .detail .text .buylink{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    padding-bottom: 10%;
+    padding-top: 30px;
+}
+.maincontent .detail .text .buylink input{
+    width:250px;
+    font-size: 1.5rem;
+    height:40px;
+    border:0;
+    background-color:gray;
+    color:black;
+    font-weight: bold;
+    border-radius:40px;
+    cursor:pointer;}
+  
+.maincontent .detail .text .buylink input:hover{
+    color:white;
+    /* background-color:black; */
+    border:2px gray solid;
+  }
+.maincontent .special{
+    width: 100%;
+}
+.maincontent .special .title{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 3rem;
+    opacity: 0.6;
+    font-weight: 800;
+}
+.maincontent .special .title:after{
+    position:absolute;
+    content:"";
+    background-color:black;
+    width: 150px;
+    margin-top:70px;
+    margin-left: -170px;
+    height:5px;
+    opacity: 0.6;
+}
+.maincontent .special .list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.maincontent .special .list .card{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10PX 10PX;
+    line-height: 2;
+}
+.maincontent .special .list .card div p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.maincontent .special .list .card div img{
+    width: 100%;
+}
+.maincontent .description{
+    width: 100%;
+    padding-top: 100px;
+}
+.maincontent .description .box{ 
+    margin: auto;
+    width: 100%; 
+}
+.maincontent .description .box tr{
+    height: 40px;
+    border: 0.5px solid black;
+}
+.maincontent .description .box tr th{
+    vertical-align:bottom;
+    background-color:grey;  
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.maincontent .description .box tr td{
+    vertical-align:bottom;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.maincontent .animation {
+    position: relative;
+    width: 100%;
+}
+.maincontent .animation .title{
+    position: relative;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 3rem;
+    opacity: 0.6;
+    font-weight: 800;
+}
+.maincontent .animation .title:after{
+    position:absolute;
+    content:"";
+    background-color:black;
+    width: 150px;
+    margin-top:50px;
+    margin-left:-70px;
+    height:5px;
+    opacity: 0.6;
+}
+
+.maincontent .animation  video{   
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+}
+.maincontent .animation video iframe{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
-
+#pcvid{
+    display: none;
+}
+#phvid{
+    display: block;
+}
+}
 
 
 

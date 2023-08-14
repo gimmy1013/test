@@ -1,6 +1,7 @@
 
 .slideshow{
-    display: flex;
+    display:flex;
+    position:relative;
     width: 100%;
 }
 .slideshow video{
@@ -19,7 +20,6 @@ article{
     padding: 2px;
     font-size: 2rem;
     font-weight: bold;
-    /* border: 1px solid black; */
     display: flex;
     width: 100th;
     padding-top: 5%;
@@ -40,21 +40,45 @@ article{
     display: flex;
     width: 100%;
 }
-.newstorage .card .pict{
+.newstorage .card a {
+    text-decoration: none;
+    width: 100%;    
+    margin: 0 10px;
+}
+.newstorage .card a:hover {
+    box-shadow:0px 0px 20px 0px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.newstorage .card a .pict{
     flex-wrap: wrap;
-    padding: 0 10px;
     width:100%;
 }
-.newstorage .card .pict img{
+.newstorage .card a .pict img{
     width: 100%;
 }
-.newstorage .card .pict div{
-    width: 40%;
-    background-color: aqua;
+.newstorage .card a .pict div{
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+    color:black;
 }
-.newstorage .card .pict div{
-    background-color:gray;
-    color: aliceblue;
+button{
+    position: absolute;
+    transform: translateY(-50%,-50%);
+    font-size: 2rem;
+    color: white;
+    background-color:black;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+}
+.ributton{ 
+    left: 360px;
+    bottom: 5vh;
+}
+.lebutton{ 
+    left:20px;
+    bottom: 5vh;
 }
 article .storagebtn{
     display: flex;
@@ -99,7 +123,7 @@ article .storagebtn input:hover{
     justify-content: start;
     align-items: center;
 }
-     .topsale .text:after {
+.topsale .text:after {
     position:absolute;
     content:"";
     background-color: red;
@@ -107,29 +131,38 @@ article .storagebtn input:hover{
     height:60%;
     opacity: 0.2;}
 
-.topsale .card{
-    width:60% ;
+.topsale  .card{
+    width:70% ;
     display: flex;
 }
-.topsale .card div{
+.topsale .card a{
+    width: 33%;
+    position: relative;
+}
+.topsale .card a:hover{
+    box-shadow:0px 0px 20px 0px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    background-image: linear-gradient(to top, #050505,#e0e0db,#e0e0db,#ffffff, #ffffff);
+}
+.topsale .card a div{
+    width: 100%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
 }
-.topsale .card div img{
-    margin: auto;
-    width: 50%;
-}
-.topsale .card div a img{
+.topsale .card a div  img{
     width: 100%;
 }
-.topsale .card div:after {
+.topsale .card a div  .llogo{
+    width: 50%;
+    margin: auto;
+}
+.topsale .card a div:after {
     position:absolute;
     content:"";
     background-image: linear-gradient(to top,black,white);
     width: 20px;
     margin-left: 95%;
-    /* margin-top:50%; */
     height:100%;
     opacity: 0.5;}
 .topsale .block{
@@ -149,76 +182,352 @@ article .storagebtn input:hover{
 .event .h3::after{
     margin-top:-5%;
     color: RED;
-    font-size: 10REM;
+    font-size: 5REM;
     content: "EVENT";
     position:absolute;
     opacity: 0.1;}
 .event .card{
+    width: 100%;
     padding-top:20px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
 }
 .event .card a{
+    text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly ;
     position: relative;
-    width: 50%;
+    width: 100%;
+    margin: 10px 0;
 }
-.event .card a .box{
-    width: 80%;
-    height: 450px;
-    position: relative;
+.hover {
+    width: 100%;
+    position:relative
+}
+.hover1 div {
+    background-image:url(../img/折價圖.jpg);
+}
+.hover2 div {
+    background-image:url(../img/競賽小圖.svg);
+}
+.hover3 div {
+    background-image:url(../img/越野圖.png);
+}
+.hover4 div {
+    background-image:url(../img/首頁安駕.png);
+}
+.hover div {
+    /* background-image:url(../img/YZF-R7\ 900X600\ 5.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0;
+    text-align: center;
+    font-size: 5rem;
+    font-weight:bolder;
     overflow: hidden;
-    cursor: pointer;
-    margin-bottom: 20px;
-    border-radius: 50PX;
-}
-.event .card a .box .title{
-    display: flex;
-    justify-content:center;
-    align-items: center;
     width: 100%;
-    height: 70px;
-    background-color: #000;
-    color: #fff;
-    position: absolute;
-    bottom: -100px;
-    opacity: 0;
-    transition: all 0.5s;
+	position: relative;
+    color:white;
 }
-.event .card a .box:hover .title{
-    transform: scale(1.1);
-    bottom: 0;
-    opacity: 1;
-    font-size: 2rem;
+.hover div::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	transform: skewX(-25deg);
 }
+.hover div:hover::before {
+	animation: shine .75s;
+}
+.hover div:hover {
+    color:red;
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@media screen and (max-width: 415px) {
 
-.event .card a .box img{
-    width: 100%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.goal{
-    margin-bottom: 100px;
-    align-items: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    .slideshow{
+        height:60vh;
+        display:flex;
+        position:relative;
+        width: 100%;
+    }
+    .slideshow video{
+        width: 100%;
+    
+    }
+    article{
+        /* max-width: 980px; */
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .h2{
+        position: relative;
+        padding: 2px;
+        font-size: 2rem;
+        font-weight: bold;
+        display: flex;
+        width: 100th;
+        padding-top: 5%;
+        margin: auto;
+    }
+    .h2 p{position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        font-size: 4rem;
+        color: red;
+        opacity: 0.3;
+    }
+    .newstorage{
+        position: relative;
+        margin: auto;   
+        display: flex;
+        flex-wrap: wrap;
+        width:70%;
+        overflow: hidden;
+        border: 1px solid gray;
+    }
+    .newstorage .card {
+        padding: 0;
+        position: relative;
+        height: 50vh;
+        width: 1200px;
+        left: 0px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .newstorage .card a {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        position: relative;
+        text-decoration: none;
+        width: 300px;
+        height: 100%;
+        font-size: 3rem;
+    }
+    .newstorage .card a .pict{
+        flex-wrap: wrap;
+        width:100%;
+    }
+    .newstorage .card a .pict img{
+        width: 100%;
+    }
+    .newstorage .card a .pict div{
+        line-height: 2;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+        color:black;
+    }
+    button{
+        display: block;
+        position: absolute;
+        transform: translateY(-50%,-50%);
+        font-size: 2rem;
+        color: white;
+        background-color:black;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .ributton{ 
+        left: 360px;
+        bottom: 5vh;
+    }
+    .lebutton{ 
+        left:20px;
+        bottom: 5vh;
+    }
+    article .storagebtn{
+        display: flex;
+        margin: auto;
+        width:70%;
+    }
+    article .storagebtn a{
+        width: 100%;
+        height: 80%;
+    }
+    article .storagebtn input{
+        background-color:gray;
+        width:100%;
+        border:0;
+        height: 100%;
+        color:white;
+        font-size: 3rem;
+        font-weight: bold;
+        border-radius:40px;
+        cursor:pointer;}
+      
+    article .storagebtn input:hover{
+        color:white;
+        border:2px gray solid;
+      }
+    .topsale{
+        height: 50vh;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .topsale .text{
+        padding: 0;
+        writing-mode:horizontal-tb;
+        font-size: 3rem;
+        color: red;
+        font-weight: bolder;    
+        opacity: 0.6;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topsale .text:after {
+        position:absolute;
+        content:"";
+        background-color: red;
+        width: 300px;
+        height:10%;
+        opacity: 0.2;}
+    
+    .topsale  .card{
+        width:100% ;
+        display: flex;
+    }
+    .topsale .card a{
+        width: 33%;
+        position: relative;
+    }
+    .topsale .card a:hover{
+        box-shadow:0px 0px 20px 0px rgba(0,0,0,0.5);
+        transition: 0.5s;
+        background-image: linear-gradient(to top, #050505,#e0e0db,#e0e0db,#ffffff, #ffffff);
+    }
+    .topsale .card a div{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .topsale .card a div  img{
+        width: 100%;
+    }
+    .topsale .card a div  .llogo{
+        width: 50%;
+        margin: auto;
+    }
+    .topsale .card a div:after {
+        position:absolute;
+        content:"";
+        background-image: linear-gradient(to top,black,white);
+        width: 20px;
+        margin-left: 95%;
+        height:100%;
+        opacity: 0.5;}
+    .topsale .block{
+        content: "";
+        width: 20%;
+    }
+    .event .h3{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: bold;
+        width: 100%;
+        padding-top: 10%;
+    }
+    .event .h3::after{
+        margin-top:-5%;
+        color: RED;
+        font-size: 5REM;
+        content: "EVENT";
+        position:absolute;
+        opacity: 0.1;}
+    .event .card{
+        width: 100%;
+        padding-top:20px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .event .card a{
+        text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly ;
+        position: relative;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .hover {
+        width: 100%;
+        position:relative
+    }
+    .hover1 div {
+        background-image:url(../img/折價圖.jpg);
+    }
+    .hover2 div {
+        background-image:url(../img/競賽小圖.svg);
+    }
+    .hover3 div {
+        background-image:url(../img/越野圖.png);
+    }
+    .hover4 div {
+        background-image:url(../img/首頁安駕.png);
+    }
+    .hover div {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 70px 0;
+        text-align: center;
+        font-size: 5rem;
+        font-weight:bolder;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        color:white;
+    }
+    .hover div::before {
+        position: absolute;
+        top: 0;
+        left: -75%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+        transform: skewX(-25deg);
+    }
+    .hover div:hover::before {
+        animation: shine .75s;
+    }
+    .hover div:hover {
+        color:red;
+    }
+    @keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
 
-}    
-.goal img{
-    border:0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 50%;
-    
-    
-}
-.goal img:selection {
-    background-color: rgb(166, 203, 37);
-    color: #fff;
 }

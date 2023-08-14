@@ -8,31 +8,42 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/event.css">
+    <script src="../JQuery/jquery-3.7.0.min.js"></script>
+    <script src="../JS/event.js"></script>
 </head>
 <body>
-    <header >
-        <nav class="headlinkl">
-           <a href="./aboutus.html">關於我們</a>
-           <a href="./rent.html">重機出租</a>
-           <a href="/html/buy.html">重機銷售</a>    
-        </nav>
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
         <div class="logo">
-            <a href="./mainpage.html">
+            <a href="../html/mainpage.html">
                 <img src="../img/Group 9.svg" alt="">
             </a>    
-        </div>
-        <nav class="headlinkr">
-            <a href="./event.html">最新活動</a> 
-            <a href="./Q&A.html">問答QA</a>
-            <a href="./service base.html">服務據點</a>      
+        </div>  
+        <nav class="headlink">
+           <a href="../html/aboutus.html">關於我們</a>
+           <a href="../html/rent.html">重機出租</a>
+           <a class="minlink" href="../html/buy.html">重機銷售</a>    
+            <a href="../html/event.html">最新活動</a> 
+            <a href="../html/Q&A.html">問答QA</a>
+            <a href="../html/service base.html">服務據點</a>      
          </nav>
+         <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <label for="menu-switch" class="backdrop"></label>
     </header>
     <article> 
         <div class="mainbox">
             <div class="card">
                 <a href="./eventrows.html">
-                    <div class="box">
-                        <img src="..//img/賽道日.svg">
+                    <div class="test">
+                        <video  muted loop class="vid race" id="myVideo">
+                            <source src="../MP4/racing runbanner.mp4" poster="../img/buy banner.svg">
+                        </video>    
                         <div class="title">
                             <h2>賽道日</h2>
                         </div>
@@ -41,18 +52,10 @@
             </div>
             <div class="card">
                 <a href="./eventrows.html">
-                    <div class="box">
-                        <img src="..//img/賽道日.svg">
-                        <div class="title">
-                            <h2>賽道日</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card">
-                <a href="./eventrows.html">
-                    <div class="box">
-                        <img src="..//img/越野.svg">
+                    <div class="test">
+                        <video  muted loop class="vid race" id="myVideo">
+                            <source src="../MP4/event.slider_offroad.mp4" poster="../img/buy banner.svg">
+                        </video>    
                         <div class="title">
                             <h2>越野體驗</h2>
                         </div>
@@ -61,24 +64,17 @@
             </div>
             <div class="card">
                 <a href="./eventrows.html">
-                    <div class="box">
-                        <img src="..//img/安駕.svg">
+                    <div class="test">
+                        <video  muted loop class="vid race" id="myVideo">
+                            <source src="../MP4/event slider_safe.mp4" poster="../img/buy banner.svg">
+                        </video>    
                         <div class="title">
                             <h2>安駕訓練</h2>
                         </div>
                     </div>
                 </a>
             </div>
-        </div>
-
     </article>
-
-
-
-
-
-
-
 
 
     <footer class="footer">
